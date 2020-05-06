@@ -5,8 +5,19 @@ body {
     
 }
 .nav-item img{
-    height: 50px;
-    
+    height: 50px;   
+}
+
+table{
+    margin-top: 10px;
+}
+.navbar-custom{
+    color: rgb(37, 34, 34) !important;
+}
+.nav-link.active{
+    background-color:#6c757d !important;
+    color: honeydew !important;
+
 }
 form{
     display: block;
@@ -14,11 +25,11 @@ form{
 }
 .row{
     margin-top: 60px;
-    width: 100%;
+    width: 90%;
 }
 .modal-content{
 
-    border:red 1px solid;
+    border:#6c757d 2px solid;
     border-radius: 2% ;
     height: 348.64px;
     width: 699.3px;
@@ -35,10 +46,7 @@ form{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image: url(../images/sterlinglogo.png);
-    background-position: center;
-    background-size: 400px;
-    background-repeat: no-repeat;
+    
 }
 
 .main-body h1 {
@@ -53,7 +61,9 @@ form{
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
+    
 }
 
 
@@ -71,64 +81,56 @@ button.close {
     font-size: 40px;
 }
 .cemp-dash{
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-bottom: -40px;
+    margin-top: 10px;
+}
+.success-modal h3{
+ 
+   padding-left: 60px;    padding-top: 90px;
+}
+h3{
+    padding-left: 60px;
+}
+#td-img{
+    height: 40px;
 }
 
-/* The side navigation menu */
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  /* Sidebar links */
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-  
-  /* Active/current link */
-  .sidebar a.active {
-    background-color: gray;
+footer {
+    height: 250px;    
+    background: #212529;
     color: white;
-  }
-  
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-  
-  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-    position: fixed;
-  }
-  
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px 0 50px;
+}
+
+footer .top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .top-section h4 {
+    font-weight: bold;
+}
+
+.copyright-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-section .copyright {
+    font-size: 0.8rem;
+}
+
+.social-media-icons span{
+    display: flex;
+}
+
+.social-media-icons span img {
+    max-width: 20px;
+}
+
+footer .top-section a:hover {
+    color: rgb(202, 187, 187);
+}
+
